@@ -5,6 +5,8 @@ import "fmt"
 type Address struct {
 	City, Province, Country string
 }
+func ChangeCountryToIndonesia(address *Address) {
+	address.Country = "Indonesia"
 
 func ChangeCountryToIndonesia(address *Address) {
 	address.Country = "Indonesia"
@@ -36,4 +38,17 @@ func main() {
 	ChangeCountryToIndonesia(&alamat)
 	fmt.Println(alamat)
 
+}
+var address4 *Address = new(Address)
+	address4.City = "Bandung"
+	fmt.Println(address4)
+
+	var alamat = Address{
+		City:     "Subang",
+		Province: "Jawa Barat",
+		Country:  "",
+	}
+
+	ChangeCountryToIndonesia(&alamat)
+	fmt.Println(alamat)
 }
