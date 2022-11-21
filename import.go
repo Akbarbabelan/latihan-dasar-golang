@@ -1,6 +1,6 @@
 package main
 
-import helper "github.com/Akbarbabelan/latihan-dasar-golang/Helper_"
+import "github.com/Akbarbabelan/latihan-dasar-/helper"
 
 func main() {
 	helper.SayHello("Akbar")

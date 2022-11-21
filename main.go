@@ -1,7 +1,7 @@
-package main
+package helper
 
-import "fmt"
+import "github.com/Akbarbabelan/latihan-dasar-golang/helper"
 
 func main() {
-	fmt.Println("Hello World")
+	helper.SayHello("Hello", name)
 }
